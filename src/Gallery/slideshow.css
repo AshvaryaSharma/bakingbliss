@@ -1,0 +1,119 @@
+.imageSlideshow__area {
+    width: 100%;
+    position: relative;
+}
+
+.imageSlideshow__arrow {
+    /* background-color: #000; */
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    padding: auto;
+    z-index: 1;
+    color: #fff;
+}
+
+.imageSlideshow__caption {
+    background-color: rgba(0,0,0,0.4);
+
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    
+}
+
+.imageSlideshow__caption p {
+    
+    color: #fff;
+    margin: auto auto;
+}
+
+.fa-chevron-right {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    cursor: pointer;
+}
+
+.fa-chevron-left {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    cursor: pointer;
+    
+}
+
+.imageSlideshow__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.imageSlideshow__image__noshow {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.imageSlideshow__snapshot_area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-x: scroll;
+   
+    -ms-scroll-snap-type: x mandatory;
+   
+        scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+}
+
+.imageSlideshow__caption__noshow {
+    display: none;
+}
+
+.imageSlideshow__snapshot_container {
+    background-color: #000;
+        width: 25%;
+     padding: 10px 5px;
+     height: auto;
+}
+
+.imageSlideshow__snapshot_image {
+    /* max-width: 25%; */
+   width: 100%;
+   height: auto;
+    scroll-behavior: smooth;
+    cursor: pointer;
+   
+}
+
+.imageSlideshow__snapshot_image__notSelected {
+    cursor: pointer;
+    /*max-width: 25%;
+    */width: 100%;
+    height: auto;
+    scroll-behavior: smooth;
+    opacity: 0.4;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+
+.imageSlideshow__snapshot_image__notSelected:hover {
+    opacity: 1;
+}
+
+.imageSlideshow__arrow .arrow{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
